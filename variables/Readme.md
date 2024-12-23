@@ -35,3 +35,74 @@ console.log(name);  // Output: Samir
             ```
 
 # Types of Variable Scopes
+
+In JavaScript, variable scope refers to the accessibility or visibility of variables in different parts of the code. There are three main types of variable scopes:
+
+1. Global Scope
+
+   - A variable declared outside of any function or block has global scope
+   - It can be accessed from anywhere in the code
+
+   ```
+   let x = 10;  // Global scope
+
+    function example() {
+    console.log(x); // Can access x here
+    }
+    example();
+
+   ```
+
+2. Function Scope
+
+- A variable declared inside a function has function scope.
+- It can only be accessed within that function.
+
+```
+   function example() {
+   let y = 20; // Function scope
+   console.log(y); // Can access y here
+   }
+   console.log(y); // Error: y is not defined outside the function
+```
+
+3. Block Scope
+
+- A variable declared inside a block (e.g., inside curly braces {}) with let or const has block scope.
+- It can only be accessed within that block.
+
+```
+if (true) {
+    let z = 30;  // Block scope
+    console.log(z);  // Can access z here
+}
+console.log(z);  // Error: z is not defined outside the block
+```
+
+Summary:
+
+Global Scope: Accessible anywhere.
+
+Function Scope: Accessible only inside the function.
+
+Block Scope: Accessible only inside the block (e.g., inside {} with let or const).
+
+Using proper scoping helps avoid conflicts and makes the code easier to understand and debug.
+
+# Hoisting
+
+Hoisting is a JavaScript mechanism where variable and function declarations are moved to the top of their scope before code execution. However, only the declaration is hoisted, not the initialization.
+
+Example with `var`:
+
+```
+console.log(a); // undefined
+var a = 10;
+```
+
+Example with `let` or `const`:
+
+```
+console.log(b); // Error: Cannot access 'b' before initialization
+let b = 20;
+```
