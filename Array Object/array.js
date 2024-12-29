@@ -1,0 +1,1 @@
+const items = ["mango","usa","Fiver",2];
