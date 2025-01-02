@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)http://127.0.0.1:5500/Number-Guess/index.html -->
+<html lang="en" class="hydrated"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guess Game.</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          text-align: center;
+          margin-top: 50px;
+          background-color: rgb(82, 154, 160);
+        }
+        input[type="number"] {
+          padding: 10px;
+          width: 200px;
+        
+        }
+        button {
+          padding: 10px 15px;
+          margin: 10px;
+          background-color: #007bff;
+          color: white;
+          border: none;
+          cursor: pointer;
+          border-radius: 5px;
+        }
+        button:hover {
+          background-color: #0056b3;
+        }
+        .message {
+          margin-top: 20px;
+          font-size: 18px;
+          color: #333;
+        }
+      </style>
+  <script src="chrome-extension://kapjaoifikajdcdehfdlmojlepfpkpoe/sqrx-email-notifier/sqrx-email-notifier.esm.js" type="module" data-resources-url="chrome-extension://kapjaoifikajdcdehfdlmojlepfpkpoe/sqrx-email-notifier/" data-stencil-namespace="sqrx-email-notifier" id="sqrx-email-notifier"></script><script src="chrome-extension://kapjaoifikajdcdehfdlmojlepfpkpoe/sqrx-notification-bar/sqrx-notification-bar.esm.js" type="module" data-resources-url="chrome-extension://kapjaoifikajdcdehfdlmojlepfpkpoe/sqrx-notification-bar/" data-stencil-namespace="sqrx-notification-bar" id="sqrx-notification-bar"></script><script src="chrome-extension://kapjaoifikajdcdehfdlmojlepfpkpoe/sqrx-dialog/sqrx-dialog.esm.js" type="module" data-resources-url="chrome-extension://kapjaoifikajdcdehfdlmojlepfpkpoe/sqrx-dialog/" data-stencil-namespace="sqrx-dialog" id="sqrx-dialog"></script></head>
+  <body>
+    <h1>Number Guessing Game!</h1>
+    <p>Guess the number I'm thinking of (1-10)!</p>
+
+    <!-- Form for user input -->
+    <form id="guessForm" onsubmit="return false">
+      <input type="number" id="userGuess" placeholder="Enter your guess Number" min="1" max="10" required="">
+      <br>
+      <button type="button" id="guessButton">Guess</button>
+      <button type="button" id="restartButton">Restart</button>
+    </form>
+
+    <div class="message" id="message" <="" div="">📉 Too low! Try again.</div><div id="sqrx-content-container"><div class="squarex_ext_modal"><div class="squarex_ext_dialog-container"><div id="module_dialog_root__disposableFileViewer"><div class="squarex_ext_dialog squarex_ext_light squarex_ext__hidden"></div></div></div></div></div><div class="cgw-ext" data-ext-id="pdnenlnelpdomajfejgapbdpmjkfpjkp"></div><div class="cgw_main_container" style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; line-height: 18px; user-select: text; font-weight: normal; letter-spacing: normal; -webkit-font-smoothing: auto;"><template shadowrootmode="open"><style>.codeblocks{counter-reset:sh-line-number}:host{--sh-class: #e3eaf2;--sh-identifier: #c699e3;--sh-sign: #66cccc;--sh-property: #c699e3;--sh-entity: #66cccc;--sh-jsxliterals: #e3eaf2;--sh-string: #91d076;--sh-keyword: #e9ae7e;--sh-comment: #8da1b9}.sh__line:before{counter-increment:sh-line-number 1;content:counter(sh-line-number);margin-right:20px;margin-left:20px;color:#a4a4a4}.custom_scrollbar{scrollbar-color:#a3a3a3 transparent;scrollbar-width:thin}.katex-html{display:none}</style><div class="absolute hidden" style="top: 0px; left: 0px; display: none;"><div style="border-radius: 5px; background: white; box-shadow: rgba(15, 15, 15, 0.05) 0px 0px 0px 1px, rgba(15, 15, 15, 0.1) 0px 3px 6px, rgba(15, 15, 15, 0.2) 0px 9px 24px; z-index: 9999990; pointer-events: auto; position: relative;"><div class="text-sm text-neutral-700"><div style="display: inline-flex; align-items: stretch; height: 32px; overflow: hidden;"><div role="button" tabindex="0" class="inline-flex items-center gap-[5px]" style="user-select: none; transition: background 20ms ease-in; cursor: pointer; display: flex; align-items: center; border-radius: 0px; padding-left: 7px; padding-right: 8px; white-space: nowrap; box-shadow: rgba(55, 53, 47, 0.09) 1px 0px 0px; margin-right: 1px;"><div><svg id="Layer_1" version="1.1" viewBox="0 0 16 16" fill="currentColor" height="14px" width="14px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M7,5V3c0-0.515-0.435-1-1-1C5.484,2,5.258,2.344,5,2.586L0.578,7C0.227,7.359,0,7.547,0,8s0.227,0.641,0.578,1L5,13.414  C5.258,13.656,5.484,14,6,14c0.565,0,1-0.485,1-1v-2h2c1.9,0.075,4.368,0.524,5,2.227C14.203,13.773,14.625,14,15,14  c0.563,0,1-0.438,1-1C16,7.083,12.084,5,7,5z"></path></svg></div><div class="font-medium">ChatGPT Writer</div></div><div role="button" tabindex="0" class="inline-flex items-center" style="user-select: none; transition: background 20ms ease-in; cursor: pointer; display: flex; align-items: center; border-radius: 0px; padding-left: 7px; padding-right: 8px; white-space: nowrap; box-shadow: none; margin-right: 0px;"><div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-3 w-3"><path fill-rule="evenodd" d="M7.84 1.804A1 1 0 018.82 1h2.36a1 1 0 01.98.804l.331 1.652a6.993 6.993 0 011.929 1.115l1.598-.54a1 1 0 011.186.447l1.18 2.044a1 1 0 01-.205 1.251l-1.267 1.113a7.047 7.047 0 010 2.228l1.267 1.113a1 1 0 01.206 1.25l-1.18 2.045a1 1 0 01-1.187.447l-1.598-.54a6.993 6.993 0 01-1.929 1.115l-.33 1.652a1 1 0 01-.98.804H8.82a1 1 0 01-.98-.804l-.331-1.652a6.993 6.993 0 01-1.929-1.115l-1.598.54a1 1 0 01-1.186-.447l-1.18-2.044a1 1 0 01.205-1.251l1.267-1.114a7.05 7.05 0 010-2.227L1.821 7.773a1 1 0 01-.206-1.25l1.18-2.045a1 1 0 011.187-.447l1.598.54A6.993 6.993 0 017.51 3.456l.33-1.652zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path></svg></div></div></div></div></div></div></template></div><button id="cgw_action_btn" tabindex="-1" style="position: absolute; top: -9999px; left: -9999px; width: 1px; height: 1px; opacity: 0; pointer-events: none;"></button></body></html>

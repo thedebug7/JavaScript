@@ -9,16 +9,52 @@ Think of it as your website as a tree. Every HTML element (like <div>, <p>, or <
 
 # How to Access the DOM?
 
-1. Select an Element
+1. `getElementById`
 
-- `getElementById`: Selects an element by its `id`.
+- Selects an element by its `id`.
 
 ```
-const title = document.getElementById("main-title");
-console.log(title);
+let title = document.getElementById("title");
+console.log(title); // <h1 id="title">Hello, World!</h1>
+
 ```
 
-2.
+2. `getElementsByClassName`
+
+- Selects elements by their class name (returns a collection of elements).
+
+```
+let items = document.getElementsByClassName("item");
+console.log(items); // HTMLCollection of elements with class "item"
+
+```
+
+3. `getElementsByTagName`
+
+- Selects elements by their tag name (e.g., all `<p>` elements).
+
+```
+let paragraphs = document.getElementsByTagName("p");
+console.log(paragraphs); // HTMLCollection of all <p> elements
+```
+
+4. `querySelector`
+
+- Selects the first element that matches a CSS selector.
+
+```
+let title = document.querySelector("#title"); // Select by ID
+let firstItem = document.querySelector(".item"); // Select by class
+```
+
+4. `querySelectorAll`
+
+- Selects all elements that match a CSS selector (returns a NodeList).
+
+```
+let allItems = document.querySelectorAll(".item");
+console.log(allItems); // NodeList of elements with class "item"
+```
 
 # properties of an element
 
