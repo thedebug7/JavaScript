@@ -56,18 +56,149 @@ let allItems = document.querySelectorAll(".item");
 console.log(allItems); // NodeList of elements with class "item"
 ```
 
-# properties of an element
+# Manipulating Elements
 
-The properties of an element in JavaScript allow you to interact with and manipulate the selected HTML elements dynamically. These properties give you access to the content, attributes, styles, and other characteristics of the element.
+1. Changing Content
 
-1. innerHTML
-   This property gets or sets the HTML content inside an element.
-
-- Get:
+- Use the `textContent` or `innerHTML` properties.
 
 ```
-const element = document.querySelector("#example");
-console.log(element.innerHTML); // Outputs: "<span>Hello, World!</span>"
+let title = document.getElementById("title");
+title.textContent = "Welcome to JavaScript DOM!"; // Change text
+title.innerHTML = "<strong>Welcome to JavaScript DOM!</strong>"; // Add HTML
+
 ```
 
-- Set
+2. Changing Attributes
+
+- Use the `setAttribute` and `getAttribute` methods.
+
+```
+let link = document.querySelector("a");
+link.setAttribute("href", "https://example.com"); // Change href
+console.log(link.getAttribute("href")); // Get href
+
+```
+
+3. Changing Styles
+
+- Use the `style` property.
+
+```
+let title = document.getElementById("title");
+title.style.color = "blue"; // Change text color
+title.style.fontSize = "24px"; // Change font size
+```
+
+# Adding or Removing Elements
+
+<h2> Adding Elements </h2>
+
+1. Create a new element:
+
+```
+let newDiv = document.createElement("div");
+newDiv.textContent = "This is a new div!";
+```
+
+2. Append it to an existing element:
+
+```
+document.body.appendChild(newDiv);
+```
+
+<h2> Removing Elements</h2>
+
+- Use the `remove` method or `removeChild`.
+
+```
+let title = document.getElementById("title");
+title.remove(); // Removes the element directly
+
+// Using parentNode:
+let paragraph = document.querySelector("p");
+paragraph.parentNode.removeChild(paragraph); // Removes the paragraph
+
+```
+
+# Event Listeners
+
+Events are actions like clicks, typing, or hovering. You can listen for these actions using event listeners.
+
+<h2> Adding an Event Listener </h2>
+
+```
+let button = document.querySelector("#myButton");
+
+button.addEventListener("click", () => {
+alert("Button was clicked!");
+});
+
+```
+
+<h2>Common Events </h2>
+
+```
+Event Type	                        Descriptio
+_________                        _______________________________
+
+click	                           When an element is clicked
+mouseover	                     When the mouse hovers
+keydown	                        When a key is pressed
+submit	                        When a form is submitted
+
+```
+
+# Traversing the DOM
+
+You can navigate through parent, child, and sibling elements.
+
+1. Parent Element
+
+- Access the parent of an element:
+
+```
+let paragraph = document.querySelector("p");
+console.log(paragraph.parentNode); // Logs the parent (e.g., <body>)
+
+```
+
+2. Child Elements
+
+- Access children of an element:
+
+```
+let body = document.body;
+console.log(body.children); // HTMLCollection of children
+```
+
+3.  Sibling Elements
+
+- Access siblings of an element:
+
+```
+let paragraph = document.querySelector("p");
+console.log(paragraph.nextElementSibling); // Next sibling element
+console.log(paragraph.previousElementSibling); // Previous sibling element
+```
+
+# Working with Forms
+
+Forms are interactive and can trigger events.
+
+<h2>Access Form Inputs </h2>
+
+```
+let input = document.getElementById("username");
+console.log(input.value); // Get the value entered by the user
+```
+
+<h2>Submit Event</h2>
+
+```
+let form = document.querySelector("form");
+form.addEventListener("submit", (e) => {
+  e.preventDefault(); // Prevent form from submitting
+  console.log("Form submitted!");
+});
+```
